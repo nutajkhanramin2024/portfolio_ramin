@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="logo" href="pics/ramin2.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramin's Developer Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #01051c;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+a {
+  font-size: large;
+}
+#red:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+#r:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+#About:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+#ser:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+#con:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+#works:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+#a:hover {
+  color: red;
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+}
+.profile-div {
+  background-color: #ff3838;
+  color: rgb(253, 253, 253);
+  height: 500px;
+  width: 800px;
+  padding-left: 100px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 100px;
+  padding-top: 50px;
+  box-shadow: #ff3838;
+}
+.large-text {
+  font-size: 300%;
+}
+.small-text {
+  font-size: 20px;
+}
+.download-cv {
+  height: 45px;
+  width: 180px;
+  border-bottom-left-radius: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 35px;
+  border-top-right-radius: 35px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  font-size: 15px;
+}
+.download-cv:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.pic img {
+  margin-left: 350px;
+  height: 450px;
+  width: 500px;
+  border-radius: 40px;
+}
+.follow {
+  margin-top: 50px;
+  margin-left: 400px;
+}
+#follow-me {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#Facebook {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.line {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#Linkdin {
+  color: red;
+  cursor: pointer;
+}
+#Instragrame {
+  cursor: pointer;
+}
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  height: 400px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.content-table thead tr {
+  background-color: #ff3838;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  height: 100px;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #ffffff;
+  height: 100px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #ff0000;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ffffff;
+}
+
+.content-table tbody td tr.active-row {
+  font-weight: bold;
+  color: rgb(255, 251, 251);
+}
+.options {
+  text-align: center;
+  color: #ff3838;
+  margin-top: 100px;
+}
+.def {
+  text-align: center;
+}
+#services {
+  text-align: center;
+}
+#contact-form {
+  color: black;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+#contact-form h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#contact-form button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#contact-form button:hover {
+  background: #0056b3;
+}
+#contact-form {
+  background: #01051c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  width: 900px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+#contact-form h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+  color: red;
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: red;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #171836;
+  color: #01051c;
+}
+.contact-form button {
+  background: red;
+  color: #01051c;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#contact-form button:hover {
+  background-color: red;
+}
+.side-div {
+  height: 200px;
+  width: 700px;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+.con {
+  display: flex;
+  background-color: #011327;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  .fa-solid fa-bars {
+    display: block;
+  }
+}
+
+.none{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 20px;
+  cursor: pointer;
+}
+.none:hover{
+  color: black;
+}
+i:hover{
+  color: #020d4f;
+}
+.footer{
+  width: 100%;
+  height: 20px;
+}
+.copy{
+  margin-right: 40%;
+  margin-left: 40%;
+}
+
+    </style>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Ramin's Profile</a>
+        </div>
+        <ul class="nav-links">
+          <li><a id="red">01712853139</a></li>
+          <li><a id="r">mr.ramin2024@gmail.com</a></li>
+          <li><a id="About" href="#about-me">About</a></li>
+          <li><a id="ser" href="#services">Services</a></li>
+          <li><a id="con" href="#contact-form">Contact</a></li>
+          <li><a id="a" href="#">Hire me</a></li>
+          <li><i  id="nav" class="fa-solid fa-bars" style="color: black; display: none;" ></i></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="profile-div">
+          ----welcome to my profile
+          <br />
+          <span class="large-text"
+            >I am a web developer and logo designer</span
+          >
+          <br /><br /><br /><br />
+          <span class="small-text">
+            I break down complex problem into small pices and solve them
+            downloand my cv.
+          </span>
+          <br /><br /><br />
+          <span class="cv"><a href="www.google.com" download=""><button class="download-cv">Download Cv</button></a></span>
+      </div>
+      <div class="pic">
+        <img src="pics/ramin2.jpg">
+        <div class="follow">
+          <span id="follow-me">Follow on -></a> </span>
+          <span id="Facebook"><a href="https://www.facebook.com/profile.php?id=61556682789965">Facebook</a></span>
+          <span class="line">|</span>
+          <span id="Instragrame">Instragrame</span>
+          <span class="line">|</span>
+          <span id="Linkdin">Linkdin</span>
+          
+        </div>
+      </div>
+    </main>
+    <br>
+    <br>
+    <h4 class="options">About me! ------ 1</h4>
+    <h1 class="def">Why you hire me for your next project?</h1>
+    <div id="about-me">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Skills</th>
+            <th>Experience</th>
+            <th>Pricing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Web designing</td>
+            <td>5 years</td>
+            <td>$ 50 </td>
+          </tr>
+          <tr class="active-row">
+            <td>2</td>
+            <td>Logo designing</td>
+            <td>10 years</td>
+            <td>$ 150</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Web development</td>
+            <td>15+ years</td>
+            <td>$ 1000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="services">
+      <h4 class="options">My services ---- 2 </h4>
+      <h1 id="services">The services I provide</h1>
+      <table class="content-table">
+        <thead>
+          <tr>
+            <td>No</td>
+            <td>Services</td>
+            <td>Description</td>
+            <td>Pricing</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Brand Designing</td>
+            <td>I use all the leatest 
+              tecnologies for the 
+              Brand designing</td>
+              <td>$ 250</td>
+          </tr>
+          <tr class="active-row">
+            <td>2</td>
+            <td>Graphics Designing</td>
+            <td>I make design based on clients requerments</td>
+            <td>$ not fixed (based on your design)</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Web Designing</td>
+            <td>I will design very nice looking websites use any tecnology you want</td>
+            <td>$ 350</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Web developer</td>
+            <td>I can make any website If you give me any design</td>
+            <td>$ 500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <div class="profile-div">
+        <span><h1><----- Some of my works ----></h1></span>
+        <span><h2><a class="none" href="https://nutajkhanramin2024.github.io/spotify/">Spotify</a></h2></span>
+        <span><h2><a class="none" href=" https://nutajkhanramin2024.github.io/gym/">Gym</a></h2></span>
+        <span><h2><a class="none" href=" https://nutajkhanramin2024.github.io/Interior_design-/">Interior design</a></h2></span>
+        <span><h2><a class="none" href=" https://nutajkhanramin2024.github.io/shhoes/">Nike</a></h2></span>
+        <span><h2>Follow me on yt & fb</h2></span>
+        <span><a href="https://www.youtube.com/channel/UCiPd9hjUHY0eO9PaKlTmUzQ"><i class="fa-brands fa-youtube fa-2xl"></i> </a><a href="https://www.facebook.com/profile.php?id=61556682789965"><i class="fa-brands fa-facebook fa-2xl"></i></a></span>
+        <span><h4>message me on messenger:</h4></span>
+        
+        <span><a href="https://discord.gg/8sHWxWwT"><i class="fa-brands fa-discord fa-2xl"></i></a></span>
+        
+        
+      </div>
+    </div>
+
+    <div class="con">
+    <div class="side-div">
+      <h1>Do you have a project in your mind?</h1>
+      <h4 id="small">There are a lot of developer available but the best deal you will get here</h4>
+      <span id="text">For the best deal just contact me and I will</span>
+    </div>
+    <div id="contact-form">
+      <h2>Contact Us</h2>
+      <form action="submit_form.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="Services">Services</label>
+          <input type="text" id="Services" name="Services" required>
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Send Message</button>
+      </form>
+  </div>
+</div>
+<div class="footer">
+ <div class="copy">
+  Copyright © 2024 Ramin's Dev Portfolio ®
+ </div>
+</div>
+
+  </body>
+</html>
